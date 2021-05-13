@@ -1,0 +1,348 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+:root {
+  --primary-cyan: hsl(176, 50%, 47%);
+  --secondary-cyan: hsl(176, 72%, 28%);
+  --primary-black: hsl(0, 0%, 0%);
+  --primary-dark-grey: hsl(0, 0%, 48%);
+}
+html {
+  font-size: 67%;
+}
+
+body {
+  font-family: "Commissioner";
+  background-color: #fafafa;
+  padding-bottom: 100px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header {
+  background: url("./images/image-hero-desktop.jpg");
+  height: 43rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-attachment: fixed;
+  position: relative;
+}
+
+header nav {
+  display: flex;
+  width: 100%;
+  color: white;
+  font-size: 1.5rem;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4rem 10rem;
+}
+
+header nav .mobile-button {
+  display: none;
+}
+
+header nav .nav__links {
+  font-weight: 700;
+  font-size: 1.1em;
+}
+
+.mt-small {
+  margin-top: 1.5rem;
+}
+.mt-medium {
+  margin-top: 2.5rem;
+}
+.mt-large {
+  margin-top: 3.5rem;
+}
+
+.nav__links a:not(:last-child) {
+  margin-right: 25px;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  margin: 0 auto;
+  transform: translateY(-7%);
+}
+
+.panel {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  width: 100%;
+  border: 1px solid var(--primary-dark-grey);
+  border-top: none;
+  border-left: none;
+  font-size: 1rem;
+  background-color: white;
+}
+
+.main-form-heading {
+  color: var(--primary-black);
+  padding: 3rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  background-color: white;
+}
+.main-form-heading__logo {
+  position: absolute;
+  top: 0;
+  transform: translateY(-50%);
+}
+
+.main-form-heading h1 {
+  font-size: 2.5em;
+}
+
+.main-form-heading span {
+  font-size: 1.5em;
+}
+.main-form-heading__cta {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2em;
+}
+
+.bookmark {
+  display: flex;
+}
+
+.bookmark svg {
+  transform: translateX(calc(3.5em + 35%));
+}
+
+.main-form__analytics {
+  width: 100%;
+  background-color: white;
+  padding: 3rem;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.main-form__analytics__col {
+  width: 33.3%;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5rem;
+  padding: 1.5rem 1rem;
+  padding-left: 3.5rem;
+  position: relative;
+}
+.main-form__analytics__col h2 {
+  font-size: 1.5em;
+}
+.main-form__analytics__col span {
+  font-size: 0.9em;
+  color: var(--primary-dark-grey);
+}
+.main-form__analytics__col hr {
+  width: 1px;
+  height: 75%;
+  position: absolute;
+  left: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.main-form__analytics-progress {
+  width: 100%;
+  background-color: lightgrey;
+  height: 2rem;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+}
+.main-form__analytics-progress__bar {
+  width: 75%;
+  height: 2rem;
+  background-color: var(--primary-cyan);
+  height: 2rem;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+}
+
+.main-form__about {
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+  padding: 3rem;
+}
+.main-form__about h1 {
+  font-size: 3em;
+}
+.main-form__about > span {
+  font-size: 1.5em;
+  color: var(--primary-dark-grey);
+}
+
+.main-form__about__product {
+  width: 100%;
+  border: 1px solid lightgrey;
+  padding: 3rem;
+}
+.main-form__about__product__heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.main-form__about__product__heading h2 {
+  font-size: 2em;
+}
+.main-form__about__product__heading span {
+  font-size: 1.5em;
+  color: var(--primary-cyan);
+}
+.main-form__about__product__content p {
+  font-size: 1.7em;
+  color: var(--primary-dark-grey);
+  line-height: 1.5;
+}
+
+.main-form__about__product__footer {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+.main-form__about__product__footer p {
+  color: var(--primary-dark-grey);
+  font-size: 1.5em;
+}
+
+.main-form__about__product__footer p .emphasize {
+  color: var(--primary-black);
+  font-size: 3em;
+  font-weight: 800;
+  margin-right: 5px;
+}
+.main-form__about__product__footer .btn {
+  font-size: 1.5em;
+}
+
+.btn {
+  display: inline-block;
+  color: white;
+  padding: 1.5rem 2.5rem;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  cursor: pointer;
+}
+
+.btn--cyan {
+  background-color: var(--primary-cyan);
+}
+.btn--grey {
+  background-color: lightgrey;
+}
+
+.btn--bookmark {
+  padding-left: 4em;
+  background-color: lightgrey;
+  color: var(--primary-black);
+}
+
+/* media queries */
+
+@media screen and (max-width: 1200px) {
+  html {
+    font-size: 60%;
+  }
+}
+@media screen and (max-width: 900px) {
+  html {
+    font-size: 57%;
+  }
+  header {
+    background-image: url("./images/image-hero-mobile.jpg");
+  }
+  nav .nav__links {
+    display: none;
+  }
+  header nav .mobile-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 90%;
+  }
+  .form-container {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 400px) {
+  html {
+    font-size: 55%;
+  }
+  nav .nav__logo {
+    transform: translateX(-50%);
+  }
+  .form-container {
+    width: 90%;
+  }
+  .main-form-heading {
+  }
+  .main-form-heading h1 {
+    text-align: center;
+  }
+  .main-form-heading__cta .bookmark svg {
+    transform: translate(0%, 0%);
+  }
+  .main-form-heading__cta .bookmark .btn--bookmark {
+    display: none;
+  }
+  .main-form__analytics {
+    flex-direction: column;
+  }
+  .main-form__analytics hr {
+    position: relative;
+    width: 50%;
+    height: 1px;
+  }
+  .main-form__analytics__col {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-size: 2.5rem;
+  }
+  .main-form__about {
+    font-size: 1.2rem;
+  }
+  .main-form__about__product__heading {
+    font-size: 1rem;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .main-form__about__product__heading span {
+    margin-top: 1rem;
+  }
+  .main-form__about__product__footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .main-form__about__product__footer .btn {
+    margin-top: 1rem;
+  }
+}
